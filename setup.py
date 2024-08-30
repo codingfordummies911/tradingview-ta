@@ -20,6 +20,7 @@ setuptools.setup(
     ],
     install_requires=[
           'requests',
+          'colorama'
     ],
     python_requires='>=3.6',
     project_urls={
