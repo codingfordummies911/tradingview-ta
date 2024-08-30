@@ -1,6 +1,6 @@
 from colorama import Fore, Style
-from tradingview_ta import TA_Handler, Interval, get_multiple_analysis
-import tradingview_ta, requests, argparse
+from tradingview_ta_v2 import TA_Handler, Interval, get_multiple_analysis
+import tradingview_ta_v2, requests, argparse
 
 arg_parser = argparse.ArgumentParser()
 
@@ -15,7 +15,7 @@ if args.secureproxy:
     proxies["https"] = args.secureproxy
 
 print("------------------------------------------------")
-print("Testing {}Tradingview-TA{} v{}{}".format(Fore.CYAN, Fore.MAGENTA, tradingview_ta.__version__, Style.RESET_ALL))
+print("Testing {}Tradingview-TA{} v{}{}".format(Fore.CYAN, Fore.MAGENTA, tradingview_ta_v2.__version__, Style.RESET_ALL))
 print("This test is {}semi-automatic{}. Please compare with tradingview's data manually.".format(Fore.LIGHTRED_EX, Style.RESET_ALL))
 print("------------------------------------------------")
 
